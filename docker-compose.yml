@@ -1,0 +1,8 @@
+front:
+  build: .
+  ports:
+    - "80:80"
+  volumes:
+    - ./www:/var/www
+    - ./sites:/etc/nginx/conf.d
+    - ./logs:/var/log/supervisor
