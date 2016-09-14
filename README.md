@@ -8,7 +8,17 @@ Dockerized PHP script that I wrote to test OAuth 2 APIs at my company.  Pretty b
 * [Docker Compose](https://docs.docker.com/compose/)
 * [Docker Machine](https://docs.docker.com/machine/) (Mac and Windows only)
 
-## Running
+## Running with _just_ Docker
+
+```bash
+# build the image from the local setup
+$ docker build -t oauth2-tester .
+
+# run that image with the right mappings and ports
+$ docker run 
+```
+
+## Running with Docker Machine & Docker Compose
 
 Set up a Docker Machine and then run:
 

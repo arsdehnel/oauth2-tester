@@ -1,0 +1,152 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+		body {
+		  font-family: 'Open Sans', arial;
+		  display: flex;
+		}
+
+		.most-recent {
+		  flex: 1 0 64%;
+		}
+
+		.as-of-date {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  opacity: .5;
+		  font-size: .8rem;
+		  background: #ccc;
+		  padding: .5em;
+		  margin: .5em;
+		}
+
+		.border {
+		  flex: 1 0 .5%;
+		  background: #80c0c0;
+		}
+
+		.recognitions {
+		  display: flex;
+		  flex: 1 0 35%;
+		  margin: 0 auto;
+		  flex-wrap: wrap;
+		}
+		.recognitions .recognition {
+		  display: flex;
+		  flex: 1 1 100%;
+		  padding: 1em;
+		  background: #ddd;
+		}
+		.recognitions .recognition.zebra-stripe-1 {
+		  background: #eee;
+
+		}
+
+		.avatars {
+		  flex: 1 0 120px;
+		  text-align: center;
+		  margin-right: 1em;
+		}
+		.avatars .avatar {
+		  border-radius: 50%;
+		  background: teal;
+		  color: white;
+		  display: inline-block;
+		  margin-right: .2em;
+		}
+
+		.receivers-many .avatars .avatar {
+		  margin-right: .2em;
+		}
+		.receivers-many .avatars .giver {
+		  margin-top: .5em;
+		  padding-top: .5em;
+		  border-top: 1px solid #999;
+		}
+		.receivers-many .avatars .giver .avatar {
+		  height: 40px;
+		  width: 40px;
+		  line-height: 2.5;
+		}
+		.receivers-many .avatars .receivers .avatar {
+		  height: 30px;
+		  width: 30px;
+		  line-height: 2.1;
+		  font-size: .9rem;
+		}
+
+		.receivers-single .avatars {
+		  position: relative;
+		}
+		.receivers-single .avatars .receivers .avatar {
+		  height: 80px;
+		  width: 80px;
+		  line-height: 3;
+		  font-size: 1.6rem;
+		}
+		.receivers-single .avatars .giver .avatar {
+		  height: 40px;
+		  width: 40px;
+		  position: absolute;
+		  border: 3px solid white;
+		  top: 50px;
+		  right: calc( 50% - 50px );
+		  line-height: 2.4;
+		}
+
+		.details {
+		  flex: 3 1 400px;
+		  line-height: 1.6;
+		  text-align: justify;
+		}
+		.details .giver-name,
+		.details .receiver-name {
+		  font-size: 1.2rem;
+		  color: teal;
+		}
+		.details .action-line {
+		  font-size: .8rem;
+		}
+		.details .comment {
+		  border-top: 1px solid #999;
+		  padding: 1em .25em;
+		}
+
+		.most-recent {
+		  display: flex;
+		}
+		.most-recent .recognition {
+		  display: flex;
+		  flex: 0 0 100%;
+		}
+		.most-recent .avatars {
+		  flex: 1 0 25%;
+		}
+		.most-recent .details {
+		  flex: 1 1 75%;
+		}
+		.most-recent .receivers-single .giver .avatar {
+		  height: 120px;
+		  width: 120px;
+		  font-size: 2rem;
+		  line-height: 3.6;
+		  top: 200px;
+		  right: calc( 50% - 170px );
+		}
+		.most-recent .receivers-single .receivers .avatar {
+		  height: 300px;
+		  width: 300px;
+		  font-size: 6rem;
+		  line-height: 3;
+		}
+		.most-recent .receivers-many .giver .avatar {
+		  height: 100px;
+		  width: 100px;
+		  font-size: 2rem;
+		  line-height: 3;
+		}
+		.most-recent .receivers-many .receivers .avatar {
+		  height: 60px;
+		  width: 60px;
+		  font-size: 1.8rem;
+		  line-height: 2;
+		}
